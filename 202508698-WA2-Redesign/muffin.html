@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Warm bagels and fresh brews!">
+    <meta name="keywords" content="Bagels, Coffee,  Sweet, Savory, bahrain">
+    <link rel="icon" href="images/logo2.png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>muffin</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="note">
+            <p id="note_t">Made Fresh Daily</p>
+        </div>
+
+        <nav>
+
+            <!--to add the nav bar-->
+            <div class="navbar">
+
+                <a href="index.html">
+                    <img src="images/logo.png" class="logo" alt="logo">
+                </a>
+
+                <a class="menuLinks" href="index.html">Home</a>
+
+                <a class="menuLinks" href="about.html">About</a>
+
+                <div class="menuLinks dropdown">Shop
+                    <div class="dropContent">
+                        <a class="dropLinks" href="coffee.html">Coffee</a>
+                        <a class="dropLinks" href="bagels.html">Bagels</a>
+                        <a class="dropLinks" href="sweets.html">Sweets</a>
+                    </div>
+                </div>
+
+                <a class="menuLinks" href="contact.html">Contact</a>
+
+                <div class="rightNav">
+                    <img src="images/cart.png" class="cartPic" alt="cart">
+
+                    <a href="login.html">
+                        <img src="images/user.png" class="logPic" alt="user icon">
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- add to cart window-->
+        <div class="hiddenCart" id="cart">
+            <h2>My Cart</h2>
+            <ul id="productCart"></ul>
+            <p>Total: BD <span id="totalPrice">0.00</span></p>
+        </div>
+
+    </header>
+
+    <main>
+        <h2 class="itemstext">Sweets</h2>
+
+        <section>
+            <!-- order section-->
+            <div class="productsection">
+                <img src="images/muffin.png">
+
+
+                <div class="descCart">
+                    <h3>Muffin</h3>
+                    <p><span>Description :</span> Warm, freshly baked muffin,<br>crafted in small batches for that
+                        perfect homemade feel.</p>
+                    <p><span>Quantity:</span><input id="Quantity" value="1" type="number"></p>
+                    <textarea></textarea>
+                    <p>Price: 1.000 BD</p>
+                    <button class="add-to-cart-button" onclick="addToCart('Muffin', 1.000, 'images/muffin.png')">Add to cart</button>
+                </div>
+            </div>
+
+            <!-- Adding a bookmark -->
+            <div>
+                <p><a href="sweets.html" class="bookmark">Back To Shop</a></p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <a href="https://www.instagram.com/tgab.bh/">
+
+            <img src="images/instagram.png" class="icons" alt="instagram">
+        </a>
+
+        <p>The Great American Bagel 2026 © All Rights Reserved.</p>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
